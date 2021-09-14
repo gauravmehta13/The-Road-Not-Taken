@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "828182155818",
+    "project_id": "theroad-not-taken",
+    "storage_bucket": "theroad-not-taken.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828182155818:android:29cd0a39545beee7eae953",
+        "android_client_info": {
+          "package_name": "com.gaurav.trnt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828182155818-4jcki498m3tg9ubh89os473e0o7223gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurav.trnt",
+            "certificate_hash": "f82fd3f7bf8610382085c4d4bd0d7a362e6687a3"
+          }
+        },
+        {
+          "client_id": "828182155818-6dkn4j5rf6levb64jadb79ategub8l7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurav.trnt",
+            "certificate_hash": "fcd7ef728edc97e9cfd44efb5cec3a212d5f8b09"
+          }
+        },
+        {
+          "client_id": "828182155818-m3knifubte85lv4pl0svsf1eedi221tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurav.trnt",
+            "certificate_hash": "28a51388e4943781b173d9a2db1649bb3759d213"
+          }
+        },
+        {
+          "client_id": "828182155818-l3p845nunoaa9q0avloh4kqtcqqjpsa1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN7anaUKbx1q2827ioMcXFG9F65pyUP-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828182155818-l3p845nunoaa9q0avloh4kqtcqqjpsa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
