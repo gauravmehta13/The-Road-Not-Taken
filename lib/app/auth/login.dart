@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:the_road_not_taken/main.dart';
+import 'package:the_road_not_taken/app/screens/home.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -77,14 +77,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     Widget loginButton() {
-      return RawMaterialButton(
-        onPressed: () {
+      return GestureDetector(
+        onTap: () {
           googleLogin();
         },
         child: Center(
           child: Container(
               decoration: BoxDecoration(
-                  color: Colors.blueGrey,
+                  color: Colors.blueGrey[600],
                   borderRadius:
                       BorderRadius.all(Radius.circular(isLoading ? 60 : 30))),
               child: isLoading
@@ -142,6 +142,18 @@ class _LoginState extends State<Login> {
                   alignment: Alignment.bottomLeft,
                   child: Text("The Road",
                       style: GoogleFonts.montserrat(
+                          shadows: <Shadow>[
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 50,
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 100,
+                              color: Colors.redAccent,
+                            ),
+                          ],
                           fontWeight: FontWeight.w900,
                           fontSize: 40,
                           color: Colors.white)),
@@ -150,6 +162,18 @@ class _LoginState extends State<Login> {
                   alignment: Alignment.bottomRight,
                   child: Text("Not Taken",
                       style: GoogleFonts.montserrat(
+                          shadows: <Shadow>[
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 50,
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 100,
+                              color: Colors.redAccent,
+                            ),
+                          ],
                           fontWeight: FontWeight.w900,
                           fontSize: 40,
                           color: Colors.white)),
