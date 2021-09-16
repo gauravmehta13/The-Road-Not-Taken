@@ -18,11 +18,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'The Road Not Taken',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: auth.currentUser != null ? HomePage() : const Login(),
+      home: auth.currentUser == null ? const HomePage() : const Login(),
     );
   }
 }
