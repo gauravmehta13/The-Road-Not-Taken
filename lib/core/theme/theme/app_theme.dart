@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_road_not_taken/meta/utility/Constants.dart';
+import 'package:the_road_not_taken/meta/utility/constant.dart';
 
 import 'app_color.dart';
 

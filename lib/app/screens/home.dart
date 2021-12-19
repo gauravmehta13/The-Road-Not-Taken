@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   Stream<QuerySnapshot<Map<String, dynamic>>> ownerData() {
     return FirebaseFirestore.instance
         .collection("roadsNotTaken")
-        .doc(auth.currentUser!.uid)
+        .doc(auth.currentUser?.uid ?? "j")
         .collection("roads")
         .snapshots();
   }
